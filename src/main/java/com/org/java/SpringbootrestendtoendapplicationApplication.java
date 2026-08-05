@@ -8,6 +8,7 @@ public class SpringbootrestendtoendapplicationApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootrestendtoendapplicationApplication.class, args);
+        System.out.println("Hello intilj welcome back it...");
     }
 
 }
