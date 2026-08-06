@@ -28,4 +28,8 @@ public class EmployeeController {
     public List<Employee> updateEmployees(@RequestBody List<Employee> employees) {
         return employeeService.updateEmployee(employees);
     }
+    @GetMapping("/welcome")
+    public String welocmeTest(){
+        return "Welcome spring boot test for application";
+    }
 }
