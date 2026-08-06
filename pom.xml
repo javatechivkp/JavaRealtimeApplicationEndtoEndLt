@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.org.java</groupId>
     <artifactId>SPRINGBOOTRESTENDTOENDAPPLICATION</artifactId>
-    <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>SPRINGBOOTRESTENDTOENDAPPLICATION</name>
     <description>SPRINGBOOTRESTENDTOENDAPPLICATION</description>
@@ -97,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>springbootendtoendapp-tomcat-pipeline</finalName>
+        <finalName>springbootendtoendapp-docker-pipeline</finalName>
 
         <plugins>
             <plugin>
