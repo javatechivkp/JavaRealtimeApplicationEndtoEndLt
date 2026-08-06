@@ -11,7 +11,7 @@ pipeline {
             steps{
                 script{
                    // bat 'docker build -t thrishank99/springbootendtoendapp-docker-pipeline .'
-                    bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t thrishank99/springbootendtoendapp-docker-pipeline .'
+                    bat '"C:/Program Files/Docker/Docker/resources/bin/docker.exe" build -t thrishank99/springbootendtoendapp-docker-pipeline .'
                 }
             }
         
@@ -28,7 +28,7 @@ pipeline {
         }
         stage('build & SonarQube Analysis'){
             steps{
-              withSonarQubeEnv('sonarqubescannernew'){
+              withSonarQubeEnv('sonarqubescanner'){
               bat 'mvn clean package sonar:sonar'
             }
 }
