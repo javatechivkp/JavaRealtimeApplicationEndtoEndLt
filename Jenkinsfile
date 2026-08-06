@@ -10,7 +10,8 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t thrishank99/springbootendtoendapp-docker-pipeline .'
+                   // bat 'docker build -t thrishank99/springbootendtoendapp-docker-pipeline .'
+                    bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t thrishank99/springbootendtoendapp-docker-pipeline .'
                 }
             }
         
