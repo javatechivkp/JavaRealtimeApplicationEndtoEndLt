@@ -2,10 +2,10 @@ spring:
   application:
     name: SPRINGBOOTRESTENDTOENDAPPLICATION
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/techiendtoendapp?allowPublicKeyRetrieval=true&useSSL=false
-    password: root
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${MYSQL_USER:root}
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/techiendtoendapp?useSSL=false&allowPublicKeyRetrieval=true
+    password: ${MYSQL_PASSWORD:root}
   jpa:
     hibernate:
       ddl-auto: update
@@ -15,7 +15,7 @@ spring:
 #    - test
 logging:
   file:
-    name: C:/Users/Srinu/Desktop/logs/springbootapplication.log
+    name: C:/Users/Home/Desktop/logs/springbootapplication.log
 management:
   tracing:
     sampling:
