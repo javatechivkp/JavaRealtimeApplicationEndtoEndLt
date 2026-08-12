@@ -1,4 +1,4 @@
 FROM eclipse-temurin:21-jdk
 EXPOSE 8080
-ADD target/springbootendtoendapp-docker-pipeline.jar springbootendtoendapp-docker-pipeline.jar
-ENTRYPOINT ["java","-jar","/springbootendtoendapp-docker-pipeline.jar"]
+ADD target/springboot-aws-eks-pipeline-application.jar springboot-aws-eks-pipeline-application.jar
+ENTRYPOINT ["java","-jar","/springboot-aws-eks-pipeline-application.jar"]

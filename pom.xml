@@ -96,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>springbootendtoendapp-docker-pipeline</finalName>
+        <finalName>springboot-aws-eks-pipeline-application</finalName>
 
         <plugins>
             <plugin>
