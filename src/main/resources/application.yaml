@@ -4,7 +4,7 @@ spring:
   datasource:
     #driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${MYSQL_USER:root}
-    url: jdbc:mysql://database-1.cro0q6igmpws.ap-south-2.rds.amazonaws.com:3306}/techiendtoendapp?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://database-1.cro0q6igmpws.ap-south-2.rds.amazonaws.com:3306/techiendtoendapp?useSSL=false&allowPublicKeyRetrieval=true
     password: ${MYSQL_PASSWORD:mysqlroot}
   jpa:
     hibernate:
@@ -20,5 +20,3 @@ management:
   tracing:
     sampling:
       probability: 1.0
-server:
-  port: 2026
