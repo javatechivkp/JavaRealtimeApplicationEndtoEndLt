@@ -30,6 +30,6 @@ public class EmployeeController {
     }
     @GetMapping("/welcome")
     public String welocmeTest(){
-        return "Welcome to springboot aws integration test";
+        return "IT IS A WELCOME FOR AWS TESTING BY USING AMAZON WEBSERVICE AND DOCKER WELCOME TESTING";
     }
 }
