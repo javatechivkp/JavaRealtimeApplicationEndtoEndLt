@@ -30,6 +30,6 @@ public class EmployeeController {
     }
     @GetMapping("/welcome")
     public String welocmeTest(){
-        return "Welcome spring boot test for application";
+        return "Welcome to springboot aws integration test";
     }
 }
