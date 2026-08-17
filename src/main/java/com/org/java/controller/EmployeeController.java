@@ -30,6 +30,6 @@ public class EmployeeController {
     }
     @GetMapping("/welcome")
     public String welocmeTest(){
-        return "AWS FINAL CI/CD TESTING IT IS WORKING OPR NOT.IF WORKING AWS PIPILINE USING SPRINGBOOT APPLICATIONS";
+        return "Welcome to springboot aws integration test";
     }
 }
