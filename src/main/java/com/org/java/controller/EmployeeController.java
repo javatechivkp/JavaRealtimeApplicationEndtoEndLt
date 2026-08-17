@@ -30,6 +30,6 @@ public class EmployeeController {
     }
     @GetMapping("/welcome")
     public String welocmeTest(){
-        return "Welcome to springboot aws integration test";
+        return "AWS FINAL CI/CD TESTYING FOR SPRINGBOOT APPLICATIONS....";
     }
 }
