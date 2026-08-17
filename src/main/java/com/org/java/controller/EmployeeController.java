@@ -30,6 +30,6 @@ public class EmployeeController {
     }
     @GetMapping("/welcome")
     public String welocmeTest(){
-        return "IT IS A WELCOME FOR AWS TESTING BY USING AMAZON WEBSERVICE AND DOCKER WELCOME TESTING";
+        return "AWS FINAL CI/CD TESTING IT IS WORKING OPR NOT.IF WORKING AWS PIPILINE USING SPRINGBOOT APPLICATIONS";
     }
 }
