@@ -26,7 +26,7 @@ public class EmployeeController {
 
     @PostMapping("/welcome")
     public String welcomeTest(){
-        return "THIS IS FOR AWS NEW TEST ENDTOEND LOADED";
+        return "THIS IS FOR AWS NEW TEST ENDTOEND LOADED TEST";
     }
 
     // ============ CRUD OPERATIONS ============
