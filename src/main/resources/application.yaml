@@ -10,12 +10,25 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQLDialect
-#  profiles:
-#    active:
-#    - test
+  mail:
+    host: smtp.gmail.com   # or smtp.office365.com
+    port: 587
+    username: srinuvasrao966@gmail.com
+    password: tccl vnxy jwsv ayhf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            protocols: TLSv1.2
+            trust: smtp.gmail.com
 logging:
   file:
-    name: C:/Users/Home/Desktop/logs/springbootapplication.log
+    name: C:/Users/HI/OneDrive/Desktop/logs/springbootbackendelk.log
+
 management:
   tracing:
     sampling:

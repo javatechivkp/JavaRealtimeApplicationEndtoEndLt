@@ -1,19 +1,14 @@
-package com.org.java.entity;
+package com.org.java.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-    @Id
+public class EmployeeDto {
+
     private Long empid;
     private String name;
     private int age;
