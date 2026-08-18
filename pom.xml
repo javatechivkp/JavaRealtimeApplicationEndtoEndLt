@@ -121,24 +121,17 @@
 
         <plugins>
             <plugin>
-                <groupId>org.asciidoctor</groupId>
-                <artifactId>asciidoctor-maven-plugin</artifactId>
-                <version>2.2.1</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.3</version> <!-- Must match your Spring Boot version -->
                 <executions>
                     <execution>
-                        <id>generate-docs</id>
-                        <phase>prepare-package</phase>
                         <goals>
-                            <goal>process-asciidoc</goal>
+                            <!-- ✅ This goal rewrites the JAR with the correct manifest -->
+                            <goal>repackage</goal>
                         </goals>
-                        <configuration>
-                            <backend>html</backend>
-                            <doctype>book</doctype>
-                        </configuration>
                     </execution>
                 </executions>
-                <dependencies>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
