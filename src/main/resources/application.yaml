@@ -27,7 +27,7 @@ spring:
             trust: smtp.gmail.com
 logging:
   file:
-    name: C:/Users/HI/OneDrive/Desktop/logs/springbootbackendelk.log
+    name: C:/Users/Welcome/Desktop/logs/springbootbackendelk.log
 
 management:
   tracing:

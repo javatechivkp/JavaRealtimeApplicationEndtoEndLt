@@ -141,11 +141,6 @@
                     </execution>
                 </executions>
                 <dependencies>
-                   <!-- <dependency>
-                        <groupId>org.springframework.restdocs</groupId>
-                        <artifactId>spring-restdocs-asciidoctor</artifactId>
-                        <version>${spring-restdocs.version}</version>
-                    </dependency>-->
                 </dependencies>
             </plugin>
             <plugin>
@@ -165,11 +160,6 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>default-compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
                         <configuration>
                             <annotationProcessorPaths>
                                 <path>
@@ -180,7 +170,6 @@
                                         <groupId>org.mapstruct</groupId>
                                         <artifactId>mapstruct-processor</artifactId>
                                         <version>1.7.0.Beta2</version>
-                                        <scope>compile</scope>
                                 </path>
                             </annotationProcessorPaths>
                         </configuration>
