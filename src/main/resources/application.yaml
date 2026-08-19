@@ -28,7 +28,6 @@ spring:
 logging:
   file:
     name: C:/Users/Welcome/Desktop/logs/springbootbackendelk.log
-
 management:
   tracing:
     sampling:
