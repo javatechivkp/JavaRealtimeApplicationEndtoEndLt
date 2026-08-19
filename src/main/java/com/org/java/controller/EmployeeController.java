@@ -26,14 +26,14 @@ public class EmployeeController {
 
     @PostMapping("/welcome")
     public String welcomeTest(){
-        return "THIS IS FOR AWS NEW TEST ENDTOEND LOADED TEST ITS BEGAN...";
+        return "AFTER ALL MODIFICATIONS DONE AWS SPRINGBOOT CI/CD INTEGRATION TEST.....";
     }
 
     // ============ CRUD OPERATIONS ============
     @PostMapping("/add")
     public ResponseEntity<List<EmployeeDto>> addEmployeeDetails(@RequestBody List<Employee> employee) {
         List<EmployeeDto> list = employeeService.addEmployeeDetails(employee);
-        return new ResponseEntity<>(list, HttpStatus.CREATED);
+        return new ResponseEntity(list, HttpStatus.CREATED);
     }
 
     @PutMapping("/update")

@@ -34,8 +34,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeDto> addEmployeeDetails(List<Employee> employee) {
         List<Employee> saved = employeeRepository.saveAll(employee);
-        return saved.stream().map(EmployeeMapper.INSTANCE::mapToEmployeetoEmployeeDTO)
-                .collect(Collectors.toList());
+        List<EmployeeDto> dtos =
+                EmployeeMapper.INSTANCE.mapToEmployeeDtoList(saved);
+        return dtos;
     }
 
     @Override
@@ -51,11 +52,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<EmployeeDto> fetchAllEmployeeDetails() {
-        return employeeRepository.findAll().stream()
-                .map(EmployeeMapper.INSTANCE::mapToEmployeetoEmployeeDTO)
-                .collect(Collectors.toList());
-
+        return EmployeeMapper.INSTANCE
+                .mapToEmployeeDtoList(employeeRepository.findAll());
     }
+
 
     @Override
     public Optional<EmployeeDto> findByEmployeeId(Long empid) {
