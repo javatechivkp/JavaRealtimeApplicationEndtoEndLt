@@ -116,8 +116,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<EmployeeDto> findAllSalaryDscOrder() {
         List<Employee> list = employeeRepository.findAll();
-        list.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).collect(Collectors.toList());
-        return list.stream().map(EmployeeMapper.INSTANCE::mapToEmployeetoEmployeeDTO)
+        List<Employee> descSalaries = list.stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+                .collect(Collectors.toList());
+        return descSalaries.stream()
+                .map(EmployeeMapper.INSTANCE::mapToEmployeetoEmployeeDTO)
                 .collect(Collectors.toList());
     }
 
