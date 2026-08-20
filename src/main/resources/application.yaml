@@ -3,9 +3,9 @@ spring:
     name: SPRINGBOOTRESTENDTOENDAPPLICATION
   datasource:
     #driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${MYSQL_USER:admin}
-    url: jdbc:mysql://database-1.cro0q6igmpws.ap-south-2.rds.amazonaws.com:3306/srinuawstest?useSSL=false&allowPublicKeyRetrieval=true
-    password: ${MYSQL_PASSWORD:mysqlroot}
+    username: ${MYSQL_USER:root}
+    url: jdbc:mysql://localhost:3306/srinuawstest?useSSL=false&allowPublicKeyRetrieval=true
+    password: ${MYSQL_PASSWORD:root}
   jpa:
     hibernate:
       ddl-auto: update
